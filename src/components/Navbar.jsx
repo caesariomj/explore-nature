@@ -23,7 +23,7 @@ const Navbar = () => {
             <a href="#">Support</a>
           </li>
           <li>
-            <button className="border rounded-md hover:bg-white hover:text-gray-600 py-2 px-6">
+            <button className="border border-secondary-50 py-2 px-6 text-secondary-50 bg-transparent cursor-pointer rounded-md transition-colors hover:bg-primary-600 hover:border-primary-600 hover:text-secondary-50">
               Join Us
             </button>
           </li>
@@ -34,7 +34,6 @@ const Navbar = () => {
               <span class="bg-white h-[2px] w-7 transform transition-all duration-300 origin-left group-focus:translate-x-10"></span>
               <span class="bg-white h-[2px] w-7 rounded transform transition-all duration-300 group-focus:translate-x-10 delay-75"></span>
               <span class="bg-white h-[2px] w-7 transform transition-all duration-300 origin-left group-focus:translate-x-10 delay-150"></span>
-
               <div class="absolute items-center justify-between transform transition-all duration-500 top-2.5 -translate-x-10 group-focus:translate-x-0 flex w-0 group-focus:w-12">
                 <span class="absolute bg-white h-[2px] w-5 transform transition-all duration-500 rotate-0 delay-300 group-focus:rotate-45"></span>
                 <span class="absolute bg-white h-[2px] w-5 transform transition-all duration-500 -rotate-0 delay-300 group-focus:-rotate-45"></span>

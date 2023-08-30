@@ -3,6 +3,7 @@ import ScrollReveal from "../components/ScrollReveal";
 import HeroImage from "../assets/images/hero.webp";
 
 import Iceland from "../assets/images/iceland-northern-lights.webp";
+import Indonesia from "../assets/images/indonesia-komodo-island.webp";
 
 const Home = () => {
   return (
@@ -10,7 +11,7 @@ const Home = () => {
       <header>
         <Navbar />
       </header>
-      <main className="overflow-hidden">
+      <main className="">
         <section className="w-screen h-screen relative">
           <img
             src={HeroImage}
@@ -32,60 +33,67 @@ const Home = () => {
             </a>
           </div>
         </section>
-        <section className="w-screen h-screen flex flex-col bg-secondary-200">
-          <div className="h-1/2">
-            <h2>Hello</h2>
+        <section className="w-screen h-screen relative bg-secondary-200 px-8">
+          <div className="pt-16 text-center">
+            <h1 className="text-4xl font-bold tracking-tight text-primary-800 sm:text-6xl">
+              Summer styles are finally here
+            </h1>
+            <p className="mt-4 text-xl text-gray-500">
+              This year, our new summer collection will shelter you from the
+              harsh elements of a world that doesn't care if you live or die.
+            </p>
           </div>
-          <div className="h-1/2">
-            <div className="grid grid-cols-7 w-full h-full">
-              <div className="col-span-1 relative">
+          <div class="grid grid-cols-2 md:grid-cols-4 gap-4 pt-20">
+            <div class="grid gap-4">
+              <div>
                 <img
+                  class="h-auto max-w-full object-cover object-center rounded-lg"
                   src={Iceland}
                   alt=""
-                  className="w-auto h-full object-cover object-center"
                 />
               </div>
-              <div className="col-span-1 relative">
+              <div>
+                <img class="h-auto max-w-full rounded-lg" src="" alt="" />
+              </div>
+              <div>
+                <img class="h-auto max-w-full rounded-lg" src="" alt="" />
+              </div>
+            </div>
+            <div class="grid gap-4">
+              <div>
                 <img
-                  src={Iceland}
+                  class="h-auto max-w-full object-cover object-center rounded-lg"
+                  src={Indonesia}
                   alt=""
-                  className="w-auto h-full object-cover object-center"
                 />
               </div>
-              <div className="col-span-1 relative">
-                <img
-                  src={Iceland}
-                  alt=""
-                  className="w-auto h-full object-cover object-center"
-                />
+              <div>
+                <img class="h-auto max-w-full rounded-lg" src="" alt="" />
               </div>
-              <div className="col-span-1 relative">
-                <img
-                  src={Iceland}
-                  alt=""
-                  className="w-auto h-full object-cover object-center"
-                />
+              <div>
+                <img class="h-auto max-w-full rounded-lg" src="" alt="" />
               </div>
-              <div className="col-span-1 relative">
-                <img
-                  src={Iceland}
-                  alt=""
-                  className="w-auto h-full object-cover object-center"
-                />
+            </div>
+            <div class="grid gap-4">
+              <div>
+                <img class="h-auto max-w-full rounded-lg" src="" alt="" />
               </div>
-              <div className="col-span-1 relative">
-                <img
-                  src={Iceland}
-                  alt=""
-                  className="w-auto h-full object-cover object-center"
-                />
+              <div>
+                <img class="h-auto max-w-full rounded-lg" src="" alt="" />
               </div>
-              <div className="col-span-1 relative">
-                <img
-                  src={Iceland}
-                  alt=""
-                  className="w-auto h-full object-cover object-center"
-                />
+              <div>
+                <img class="h-auto max-w-full rounded-lg" src="" alt="" />
+              </div>
+            </div>
+            <div class="grid gap-4">
+              <div>
+                <img class="h-auto max-w-full rounded-lg" src="" alt="" />
+              </div>
+              <div>
+                <img class="h-auto max-w-full rounded-lg" src="" alt="" />
+              </div>
+              <div>
+                <img class="h-auto max-w-full rounded-lg" src="" alt="" />
               </div>
             </div>
           </div>
