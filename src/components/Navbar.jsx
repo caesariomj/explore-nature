@@ -14,6 +14,9 @@ const Navbar = () => {
             <a href="#">Gallery</a>
           </li>
           <li>
+            <a href="#">Articles</a>
+          </li>
+          <li>
             <a href="#">Maps</a>
           </li>
           <li>

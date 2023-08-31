@@ -13,8 +13,8 @@ export default {
         fadeIn: "fadeIn 0.8s ease-out",
       },
       fontFamily: {
-        source: ["Source Sans 3", "sans-serif"],
-        playfair: ["Playfair Display", "sans-serif"],
+        source: ["'Source Sans 3'", "sans-serif"],
+        playfair: ["'Playfair Display'", "sans-serif"],
       },
       colors: {
         primary: {
