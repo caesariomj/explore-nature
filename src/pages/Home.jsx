@@ -1,5 +1,7 @@
 import { useState } from "react";
 
+import Counter from "../components/Counter";
+
 import Navbar from "../components/Navbar";
 import HeroImage from "../assets/images/hero.webp";
 
@@ -13,8 +15,11 @@ import ArticleFirst from "../assets/images/article-1.webp";
 import ArticleSecond from "../assets/images/article-2.webp";
 import ArticleThird from "../assets/images/article-3.webp";
 
+import WorldMap from "../assets/images/worldmap.png";
+
 const Home = () => {
   const [isSlided, setIsSlided] = useState(false);
+  const [count, setCount] = useState(0);
 
   return (
     <>
@@ -266,11 +271,11 @@ const Home = () => {
             </div>
           </div>
         </section>
-        <section className="w-screen h-screen bg-primary-900 relative">
+        <section className="w-screen h-screen bg-primary-900 relative overflow-hidden">
           <div
             className={`${
               isSlided ? "-translate-x-[31rem]" : ""
-            } transition-transform ease-in-out duration-300 flex flex-col md:flex-row w-full h-full relative`}
+            } transition-transform ease-in-out duration-300 flex flex-col md:flex-row w-full h-full`}
           >
             <div className="flex flex-col flex-none justify-center max-w-md pl-8">
               <h2 className="text-3xl font-playfair text-secondary-100 md:text-5xl">
@@ -293,6 +298,7 @@ const Home = () => {
                     src={ArticleFirst}
                     className="h-full w-full object-cover object-center"
                     alt=""
+                    loading="lazy"
                   />
                   <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/60 transition-opacity ease-in-out duration-300 group-hover:opacity-100" />
                   <div className="sticky bottom-0 p-4 text-left">
@@ -312,6 +318,7 @@ const Home = () => {
                     src={ArticleSecond}
                     className="h-full w-full object-cover object-center"
                     alt=""
+                    loading="lazy"
                   />
                   <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/60 transition-opacity ease-in-out duration-300 group-hover:opacity-100" />
                   <div className="sticky bottom-0 p-4 text-left">
@@ -331,15 +338,17 @@ const Home = () => {
                     src={ArticleThird}
                     className="h-full w-full object-cover object-center"
                     alt=""
+                    loading="lazy"
                   />
                   <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/60 transition-opacity ease-in-out duration-300 group-hover:opacity-100" />
                   <div className="sticky bottom-0 p-4 text-left">
                     <h3 className="text-2xl text-secondary-100 font-playfair">
-                      Transform the Earth, One Seed at a Time!
+                      Embracing Nature's Beauty: A Journey into Environmental
+                      Conservation
                     </h3>
                     <p className="text-sm font-medium transition-colors ease-in-out duration-300 text-secondary-100/0 group-hover:text-secondary-100/90 mt-3">
-                      Unleash the potential of a greener world – let your hands
-                      plant the seeds of transformation.
+                      Discover the Power of Preservation and Sustainability in
+                      Protecting Our Planet
                     </p>
                   </div>
                 </article>
@@ -367,6 +376,41 @@ const Home = () => {
               />
             </svg>
           </button>
+        </section>
+        <section className="w-full h-full bg-primary-900 relative">
+          <div className="absolute flex justify-center items-center divide-x divide-secondary-100 top-1/2 -translate-y-1/2 w-full text-center z-10 mx-auto">
+            <div className="w-1/3 py-2 px-4 md:py-6 md:px-12">
+              <h3 className="text-5xl md:text-8xl font-black tracking-tight text-secondary-100 drop-shadow-xl">
+                <Counter endNumber={16300} duration={0.01} />+
+              </h3>
+              <p className="font-source text-base md:text-lg font-medium text-secondary-100/90 drop-shadow-xl mt-4">
+                Number of Endangered Species
+              </p>
+            </div>
+            <div className="w-1/3 py-2 px-4 md:py-6 md:px-12">
+              <h3 className="text-5xl md:text-8xl font-black tracking-tight text-secondary-100 drop-shadow-xl">
+                <Counter endNumber={4.1} duration={300} /> M Hectares
+              </h3>
+              <p className="font-source text-base md:text-lg font-medium text-secondary-100/90 drop-shadow-xl mt-4">
+                Tropical Primary Forest Lost
+              </p>
+            </div>
+            <div className="w-1/3 py-2 px-4 md:py-6 md:px-12">
+              <h3 className="text-5xl md:text-8xl font-black tracking-tight text-secondary-100 drop-shadow-xl">
+                <Counter endNumber={17} duration={50} />%
+              </h3>
+              <p className="font-source text-base md:text-lg font-medium text-secondary-100/90 drop-shadow-xl mt-4">
+                Conservation Area Size
+              </p>
+            </div>
+          </div>
+          <img
+            src={WorldMap}
+            alt="World Map Image"
+            width={1920}
+            height={1080}
+            className="object-cover object-center scale-90 opacity-40 blur-sm"
+          />
         </section>
       </main>
     </>
