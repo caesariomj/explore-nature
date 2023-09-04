@@ -59,11 +59,11 @@ const Home = () => {
               Planet and Future Generations
             </p>
           </div>
-          <div class="grid grid-cols-1 md:grid-cols-3 gap-4 py-24">
-            <div class="grid gap-4 content-between">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 py-24">
+            <div className="grid gap-4 content-between">
               <a href="#" className="relative rounded-lg overflow-hidden group">
                 <img
-                  class="h-auto md:h-[32.6125rem] max-w-full object-cover object-center transition-transform ease-in-out duration-300 group-hover:scale-110"
+                  className="h-auto md:h-[32.6125rem] w-full object-cover object-center transition-transform ease-in-out duration-300 group-hover:scale-110"
                   src={NorthernLights}
                   alt=""
                   loading="lazy"
@@ -97,7 +97,7 @@ const Home = () => {
               </a>
               <a href="#" className="relative rounded-lg overflow-hidden group">
                 <img
-                  class="h-auto max-w-full object-cover object-center transition-transform ease-in-out duration-300 group-hover:scale-110"
+                  className="h-auto max-w-full object-cover object-center transition-transform ease-in-out duration-300 group-hover:scale-110"
                   src={KomodoIsland}
                   alt=""
                   loading="lazy"
@@ -130,10 +130,10 @@ const Home = () => {
                 </div>
               </a>
             </div>
-            <div class="grid gap-4 content-between">
+            <div className="grid gap-4 content-between">
               <a href="#" className="relative rounded-lg overflow-hidden group">
                 <img
-                  class="h-auto max-w-full object-cover object-center transition-transform ease-in-out duration-300 group-hover:scale-110"
+                  className="h-auto max-w-full object-cover object-center transition-transform ease-in-out duration-300 group-hover:scale-110"
                   src={Amazon}
                   alt=""
                   loading="lazy"
@@ -167,7 +167,7 @@ const Home = () => {
               </a>
               <a href="#" className="relative rounded-lg overflow-hidden group">
                 <img
-                  class="h-auto md:h-[32.6125rem] max-w-full object-cover object-center transition-transform ease-in-out duration-300 group-hover:scale-110"
+                  className="h-auto md:h-[32.6125rem] max-w-full object-cover object-center transition-transform ease-in-out duration-300 group-hover:scale-110"
                   src={Everest}
                   alt=""
                   loading="lazy"
@@ -200,10 +200,10 @@ const Home = () => {
                 </div>
               </a>
             </div>
-            <div class="grid gap-4 content-between">
+            <div className="grid gap-4 content-between">
               <a href="#" className="relative rounded-lg overflow-hidden group">
                 <img
-                  class="h-auto md:h-[32.6125rem] max-w-full object-cover object-center transition-transform ease-in-out duration-300 group-hover:scale-110"
+                  className="h-auto md:h-[32.6125rem] max-w-full object-cover object-center transition-transform ease-in-out duration-300 group-hover:scale-110"
                   src={HaLongBay}
                   alt=""
                   loading="lazy"
@@ -237,7 +237,7 @@ const Home = () => {
               </a>
               <a href="#" className="relative rounded-lg overflow-hidden group">
                 <img
-                  class="h-auto max-w-full object-cover object-center transition-transform ease-in-out duration-300 group-hover:scale-110"
+                  className="h-auto max-w-full object-cover object-center transition-transform ease-in-out duration-300 group-hover:scale-110"
                   src={VictoriaFalls}
                   alt=""
                   loading="lazy"
@@ -275,7 +275,7 @@ const Home = () => {
         <section className="w-screen h-screen bg-primary-900 relative overflow-hidden">
           <div
             className={`${
-              isSlided ? "-translate-x-[31rem]" : ""
+              isSlided ? "-translate-x-[30rem]" : ""
             } transition-transform ease-in-out duration-300 flex flex-col md:flex-row w-full h-full`}
           >
             <div className="flex flex-col flex-none justify-center max-w-md pl-8">
@@ -294,7 +294,7 @@ const Home = () => {
             </div>
             <div className="flex flex-1 flex-nowrap ml-8">
               <a href="#" className="relative group h-full w-[29rem]">
-                <article className="absolute top-0 right-0 w-full h-[36rem] transition-all ease-in-out duration-300 group-hover:h-full">
+                <article className="absolute top-0 right-0 w-full h-[40rem] transition-all ease-in-out duration-300 group-hover:h-full">
                   <img
                     src={ArticleFirst}
                     className="h-full w-full object-cover object-center"
@@ -314,7 +314,7 @@ const Home = () => {
                 </article>
               </a>
               <a href="#" className="relative group h-full w-[29rem]">
-                <article className="absolute top-0 right-0 w-full h-[36rem] transition-all ease-in-out duration-300 group-hover:h-full">
+                <article className="absolute top-0 right-0 w-full h-[40rem] transition-all ease-in-out duration-300 group-hover:h-full">
                   <img
                     src={ArticleSecond}
                     className="h-full w-full object-cover object-center"
@@ -334,7 +334,7 @@ const Home = () => {
                 </article>
               </a>
               <a href="#" className="relative group h-full w-[29rem]">
-                <article className="absolute top-0 right-0 w-full h-[36rem] transition-all ease-in-out duration-300 group-hover:h-full">
+                <article className="absolute top-0 right-0 w-full h-[40rem] transition-all ease-in-out duration-300 group-hover:h-full">
                   <img
                     src={ArticleThird}
                     className="h-full w-full object-cover object-center"
@@ -378,29 +378,31 @@ const Home = () => {
             </svg>
           </button>
         </section>
-        <section className="w-full h-full bg-primary-900 relative">
-          <div className="absolute flex justify-center items-center divide-x divide-secondary-100 top-1/2 -translate-y-1/2 w-full text-center z-10 mx-auto">
+        <section className="w-full h-full bg-secondary-200 relative">
+          <div className="absolute flex justify-center items-center top-1/2 -translate-y-1/2 w-full text-center z-10 mx-auto">
             <div className="w-1/3 py-2 px-4 md:py-6 md:px-12">
-              <h3 className="text-5xl md:text-8xl font-black tracking-tight text-secondary-100 drop-shadow-xl">
+              <h3 className="text-5xl md:text-8xl font-black tracking-tight text-primary-800 drop-shadow-xl">
                 <Counter endNumber={16300} duration={0.01} />+
               </h3>
-              <p className="font-source text-base md:text-lg font-medium text-secondary-100/90 drop-shadow-xl mt-4">
+              <p className="font-source text-base md:text-lg font-medium text-primary-800/90 drop-shadow-xl mt-4">
                 Number of Endangered Species
               </p>
             </div>
+            <span className="w-[2px] h-64 bg-primary-800"></span>
             <div className="w-1/3 py-2 px-4 md:py-6 md:px-12">
-              <h3 className="text-5xl md:text-8xl font-black tracking-tight text-secondary-100 drop-shadow-xl">
+              <h3 className="text-5xl md:text-8xl font-black tracking-tight text-primary-800 drop-shadow-xl">
                 <Counter endNumber={4.1} duration={300} /> M Hectares
               </h3>
-              <p className="font-source text-base md:text-lg font-medium text-secondary-100/90 drop-shadow-xl mt-4">
+              <p className="font-source text-base md:text-lg font-medium text-primary-800/90 drop-shadow-xl mt-4">
                 Tropical Primary Forest Lost
               </p>
             </div>
+            <span className="w-[2px] h-64 bg-primary-800"></span>
             <div className="w-1/3 py-2 px-4 md:py-6 md:px-12">
-              <h3 className="text-5xl md:text-8xl font-black tracking-tight text-secondary-100 drop-shadow-xl">
+              <h3 className="text-5xl md:text-8xl font-black tracking-tight text-primary-800 drop-shadow-xl">
                 <Counter endNumber={17} duration={50} />%
               </h3>
-              <p className="font-source text-base md:text-lg font-medium text-secondary-100/90 drop-shadow-xl mt-4">
+              <p className="font-source text-base md:text-lg font-medium text-primary-800/90 drop-shadow-xl mt-4">
                 Conservation Area Size
               </p>
             </div>
@@ -410,10 +412,15 @@ const Home = () => {
             alt="World Map Image"
             width={1920}
             height={1080}
-            className="object-cover object-center scale-90 opacity-40 blur-sm"
+            className="object-cover object-center scale-90 blur-sm"
           />
         </section>
-        <section className="w-screen h-screen">
+        <section className="w-screen h-screen relative">
+          <div className="absolute right-0 top-1/2 -translate-y-1/2">
+            <h2>Hello</h2>
+            <p>Paragraph</p>
+            <button>Button</button>
+          </div>
           <img
             src={CTA}
             alt=""
