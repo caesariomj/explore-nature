@@ -16,6 +16,7 @@ import ArticleSecond from "../assets/images/article-2.webp";
 import ArticleThird from "../assets/images/article-3.webp";
 
 import WorldMap from "../assets/images/worldmap.png";
+import CTA from "../assets/images/cta.jpg";
 
 const Home = () => {
   const [isSlided, setIsSlided] = useState(false);
@@ -412,6 +413,14 @@ const Home = () => {
             className="object-cover object-center scale-90 opacity-40 blur-sm"
           />
         </section>
+        <section className="w-screen h-screen">
+          <img
+            src={CTA}
+            alt=""
+            className="w-full h-full object-cover object-center"
+          />
+        </section>
+        <section className="w-screen h-screen bg-secondary-200"></section>
       </main>
     </>
   );
