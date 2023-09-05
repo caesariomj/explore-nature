@@ -9,7 +9,7 @@ const Navbar = () => {
           alt="Explore Nature Logo"
           className="w-14 h-14 invert"
         />
-        <ul className="hidden space-x-6 text-secondary-50 text-sm font-medium md:flex md:items-center">
+        <ul className="hidden space-x-6 text-secondary-50 text-base font-source md:flex md:items-center">
           <li>
             <a href="#">Gallery</a>
           </li>
@@ -31,18 +31,21 @@ const Navbar = () => {
             </button>
           </li>
         </ul>
-        <button class="relative group md:hidden">
-          <div class="relative flex overflow-hidden items-center justify-center rounded-full w-[50px] h-[50px] transform transition-all duration-200">
-            <div class="flex flex-col justify-between w-[20px] h-[20px] transform transition-all duration-300 origin-center overflow-hidden">
-              <span class="bg-white h-[2px] w-7 transform transition-all duration-300 origin-left group-focus:translate-x-10"></span>
-              <span class="bg-white h-[2px] w-7 rounded transform transition-all duration-300 group-focus:translate-x-10 delay-75"></span>
-              <span class="bg-white h-[2px] w-7 transform transition-all duration-300 origin-left group-focus:translate-x-10 delay-150"></span>
-              <div class="absolute items-center justify-between transform transition-all duration-500 top-2.5 -translate-x-10 group-focus:translate-x-0 flex w-0 group-focus:w-12">
-                <span class="absolute bg-white h-[2px] w-5 transform transition-all duration-500 rotate-0 delay-300 group-focus:rotate-45"></span>
-                <span class="absolute bg-white h-[2px] w-5 transform transition-all duration-500 -rotate-0 delay-300 group-focus:-rotate-45"></span>
-              </div>
-            </div>
-          </div>
+        <button className="text-secondary-50 md:hidden">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            strokeWidth={1.5}
+            stroke="currentColor"
+            className="w-6 h-6"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+            />
+          </svg>
         </button>
       </div>
     </nav>

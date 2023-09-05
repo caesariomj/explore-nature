@@ -20,7 +20,6 @@ import CTA from "../assets/images/cta.jpg";
 
 const Home = () => {
   const [isSlided, setIsSlided] = useState(false);
-  const [count, setCount] = useState(0);
 
   return (
     <>
@@ -50,16 +49,16 @@ const Home = () => {
           </div>
         </section>
         <section className="bg-secondary-200 px-8">
-          <div className="w-full md:max-w-4xl flex flex-col text-center pt-16 mx-auto">
-            <h2 className="text-4xl md:text-6xl text-primary-800 font-playfair">
+          <div className="w-full max-w-xl md:max-w-4xl flex flex-col text-center pt-16 mx-auto">
+            <h2 className="text-5xl md:text-6xl text-primary-800 font-playfair">
               Safeguarding Earth's Breathtaking Beauty: Our Shared Duty
             </h2>
-            <p className="text-lg md:text-xl font-source font-medium text-primary-800/80 mt-8">
+            <p className="md:text-xl font-source font-medium text-primary-800/80 mt-8">
               Cherishing and Preserving Nature's Gifts for the Well-being of Our
               Planet and Future Generations
             </p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 py-24">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 py-12 md:py-24">
             <div className="grid gap-4 content-between">
               <a href="#" className="relative rounded-lg overflow-hidden group">
                 <img
@@ -272,14 +271,14 @@ const Home = () => {
             </div>
           </div>
         </section>
-        <section className="w-screen h-screen bg-primary-900 relative overflow-hidden">
+        <section className="bg-primary-900 relative overflow-hidden md:w-screen md:h-screen">
           <div
             className={`${
               isSlided ? "-translate-x-[30rem]" : ""
-            } transition-transform ease-in-out duration-300 flex flex-col md:flex-row w-full h-full`}
+            } transition-transform ease-in-out duration-300 flex flex-col py-16 px-8 w-full h-full md:p-0 md:flex-row`}
           >
-            <div className="flex flex-col flex-none justify-center max-w-md pl-8">
-              <h2 className="text-3xl font-playfair text-secondary-100 md:text-5xl">
+            <div className="flex flex-col flex-none justify-center text-center md:text-left md:pl-8 md:max-w-md">
+              <h2 className="text-5xl font-playfair text-secondary-100 md:text-6xl">
                 Exploring Ecosystems and Environmental Dynamics
               </h2>
               <p className="text-sm font-medium text-secondary-200/90 md:text-base mt-8">
@@ -292,9 +291,12 @@ const Home = () => {
                 sustain our planet's invaluable resources.
               </p>
             </div>
-            <div className="flex flex-1 flex-nowrap ml-8">
-              <a href="#" className="relative group h-full w-[29rem]">
-                <article className="absolute top-0 right-0 w-full h-[40rem] transition-all ease-in-out duration-300 group-hover:h-full">
+            <div className="flex flex-col flex-1 flex-nowrap py-12 gap-8 md:gap-0 md:p-0 md:ml-8 md:flex-row">
+              <a
+                href="#"
+                className="relative group h-full w-full rounded-lg overflow-hidden md:w-[29rem] md:rounded-none md:overflow-visible"
+              >
+                <article className="md:absolute top-0 right-0 w-full h-[40rem] transition-all ease-in-out duration-300 md:group-hover:h-full">
                   <img
                     src={ArticleFirst}
                     className="h-full w-full object-cover object-center"
@@ -302,19 +304,19 @@ const Home = () => {
                     loading="lazy"
                   />
                   <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/60 transition-opacity ease-in-out duration-300 group-hover:opacity-100" />
-                  <div className="sticky bottom-0 p-4 text-left">
+                  <div className="absolute bottom-0 p-4 text-left md:sticky">
                     <h3 className="text-2xl text-secondary-100 font-playfair">
                       Take Action to Save Endangered Wildlife!
                     </h3>
-                    <p className="text-sm font-medium transition-colors ease-in-out duration-300 text-secondary-100/0 group-hover:text-secondary-100/90 mt-3">
+                    <p className="text-sm font-medium transition-colors ease-in-out duration-300 mt-3 text-secondary-100/90 md:text-secondary-100/0 md:group-hover:text-secondary-100/90">
                       Empowering Conservation: Every Small Effort Counts in
                       Preserving Our Precious Fauna
                     </p>
                   </div>
                 </article>
               </a>
-              <a href="#" className="relative group h-full w-[29rem]">
-                <article className="absolute top-0 right-0 w-full h-[40rem] transition-all ease-in-out duration-300 group-hover:h-full">
+              <a href="#" className="relative group h-full w-full md:w-[29rem]">
+                <article className="md:absolute top-0 right-0 w-full h-[40rem] transition-all ease-in-out duration-300 group-hover:h-full">
                   <img
                     src={ArticleSecond}
                     className="h-full w-full object-cover object-center"
@@ -334,7 +336,7 @@ const Home = () => {
                 </article>
               </a>
               <a href="#" className="relative group h-full w-[29rem]">
-                <article className="absolute top-0 right-0 w-full h-[40rem] transition-all ease-in-out duration-300 group-hover:h-full">
+                <article className="md:absolute top-0 right-0 w-full h-[40rem] transition-all ease-in-out duration-300 group-hover:h-full">
                   <img
                     src={ArticleThird}
                     className="h-full w-full object-cover object-center"
@@ -357,7 +359,7 @@ const Home = () => {
             </div>
           </div>
           <button
-            className="absolute top-1/2 right-10 -translate-y-1/2"
+            className="hidden absolute top-1/2 right-10 -translate-y-1/2 md:block"
             onClick={() => setIsSlided(!isSlided)}
           >
             <svg
