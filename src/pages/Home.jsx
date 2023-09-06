@@ -3,6 +3,7 @@ import { useState } from "react";
 import Counter from "../components/Counter";
 
 import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 import HeroImage from "../assets/images/hero.webp";
 
 import NorthernLights from "../assets/images/iceland-northern-lights.webp";
@@ -296,7 +297,7 @@ const Home = () => {
                 href="#"
                 className="relative group h-full w-full rounded-lg overflow-hidden md:w-[29rem] md:rounded-none md:overflow-visible"
               >
-                <article className="md:absolute top-0 right-0 w-full h-[40rem] transition-all ease-in-out duration-300 md:group-hover:h-full">
+                <article className="top-0 right-0 w-full h-[40rem] transition-all ease-in-out duration-300 md:absolute md:group-hover:h-full">
                   <img
                     src={ArticleFirst}
                     className="h-full w-full object-cover object-center"
@@ -315,8 +316,11 @@ const Home = () => {
                   </div>
                 </article>
               </a>
-              <a href="#" className="relative group h-full w-full md:w-[29rem]">
-                <article className="md:absolute top-0 right-0 w-full h-[40rem] transition-all ease-in-out duration-300 group-hover:h-full">
+              <a
+                href="#"
+                className="relative group h-full w-full rounded-lg overflow-hidden md:w-[29rem] md:rounded-none md:overflow-visible"
+              >
+                <article className="top-0 right-0 w-full h-[40rem] transition-all ease-in-out duration-300 md:absolute md:group-hover:h-full">
                   <img
                     src={ArticleSecond}
                     className="h-full w-full object-cover object-center"
@@ -328,15 +332,18 @@ const Home = () => {
                     <h3 className="text-2xl text-secondary-100 font-playfair">
                       Transform the Earth, One Seed at a Time!
                     </h3>
-                    <p className="text-sm font-medium transition-colors ease-in-out duration-300 text-secondary-100/0 group-hover:text-secondary-100/90 mt-3">
+                    <p className="text-sm font-medium transition-colors ease-in-out duration-300 mt-3 text-secondary-100/90 md:text-secondary-100/0 md:group-hover:text-secondary-100/90">
                       Unleash the potential of a greener world – let your hands
                       plant the seeds of transformation.
                     </p>
                   </div>
                 </article>
               </a>
-              <a href="#" className="relative group h-full w-[29rem]">
-                <article className="md:absolute top-0 right-0 w-full h-[40rem] transition-all ease-in-out duration-300 group-hover:h-full">
+              <a
+                href="#"
+                className="relative group h-full w-full rounded-lg overflow-hidden md:w-[29rem] md:rounded-none md:overflow-visible"
+              >
+                <article className="top-0 right-0 w-full h-[40rem] transition-all ease-in-out duration-300 md:absolute md:group-hover:h-full">
                   <img
                     src={ArticleThird}
                     className="h-full w-full object-cover object-center"
@@ -349,7 +356,7 @@ const Home = () => {
                       Embracing Nature's Beauty: A Journey into Environmental
                       Conservation
                     </h3>
-                    <p className="text-sm font-medium transition-colors ease-in-out duration-300 text-secondary-100/0 group-hover:text-secondary-100/90 mt-3">
+                    <p className="text-sm font-medium transition-colors ease-in-out duration-300 mt-3 text-secondary-100/90 md:text-secondary-100/0 md:group-hover:text-secondary-100/90">
                       Discover the Power of Preservation and Sustainability in
                       Protecting Our Planet
                     </p>
@@ -381,8 +388,8 @@ const Home = () => {
           </button>
         </section>
         <section className="w-full h-full bg-secondary-200 relative">
-          <div className="absolute flex justify-center items-center top-1/2 -translate-y-1/2 w-full text-center z-10 mx-auto">
-            <div className="w-1/3 py-2 px-4 md:py-6 md:px-12">
+          <div className="absolute flex justify-center items-center top-1/2 -translate-y-1/2 w-full text-center z-10 px-8">
+            <div className="w-1/3 py-2 px-2 md:py-6 md:px-12">
               <h3 className="text-5xl md:text-8xl font-black tracking-tight text-primary-800 drop-shadow-xl">
                 <Counter endNumber={16300} duration={0.01} />+
               </h3>
@@ -390,8 +397,8 @@ const Home = () => {
                 Number of Endangered Species
               </p>
             </div>
-            <span className="w-[2px] h-64 bg-primary-800"></span>
-            <div className="w-1/3 py-2 px-4 md:py-6 md:px-12">
+            <span className="w-[2px] h-32 bg-primary-800 md:h-64"></span>
+            <div className="w-1/3 py-2 px-2 md:py-6 md:px-12">
               <h3 className="text-5xl md:text-8xl font-black tracking-tight text-primary-800 drop-shadow-xl">
                 <Counter endNumber={4.1} duration={300} /> M Hectares
               </h3>
@@ -399,8 +406,8 @@ const Home = () => {
                 Tropical Primary Forest Lost
               </p>
             </div>
-            <span className="w-[2px] h-64 bg-primary-800"></span>
-            <div className="w-1/3 py-2 px-4 md:py-6 md:px-12">
+            <span className="w-[2px] h-32 bg-primary-800 md:h-64"></span>
+            <div className="w-1/3 py-2 px-2 md:py-6 md:px-12">
               <h3 className="text-5xl md:text-8xl font-black tracking-tight text-primary-800 drop-shadow-xl">
                 <Counter endNumber={17} duration={50} />%
               </h3>
@@ -417,20 +424,46 @@ const Home = () => {
             className="object-cover object-center scale-90 blur-sm"
           />
         </section>
-        <section className="w-screen h-screen relative">
-          <div className="absolute right-0 top-1/2 -translate-y-1/2">
-            <h2>Hello</h2>
-            <p>Paragraph</p>
-            <button>Button</button>
+        <section className="w-full h-full relative bg-primary-900 px-8 md:w-screen md:h-screen">
+          <div className="w-full h-full gap-8 items-center py-8 mx-auto xl:gap-16 md:grid md:grid-cols-2 sm:py-16">
+            <img
+              src={CTA}
+              alt=""
+              className="w-full object-cover object-center rounded-md"
+            />
+            <div className="mt-4 md:mt-0">
+              <h2 className="text-6xl font-playfair text-secondary-200 mb-4">
+                Preserve Our Planet's Future
+              </h2>
+              <p className="font-source text-secondary-200/70 mb-6 md:text-lg">
+                Join hands with us in the global effort to protect and nurture
+                our planet. Your actions today can secure a sustainable tomorrow
+                for generations to come. Let's take the first step towards a
+                greener, cleaner world. Together, we can make a difference.
+              </p>
+              <a
+                href="#"
+                className="inline-flex items-center text-primary-900 bg-secondary-200 hover:bg-secondary-100 focus:ring-4 font-source rounded-lg text-sm px-5 py-2.5 text-center dark:focus:ring-primary-900"
+              >
+                Take Action Now
+                <svg
+                  className="ml-2 -mr-1 w-5 h-5"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                    clipRule="evenodd"
+                  ></path>
+                </svg>
+              </a>
+            </div>
           </div>
-          <img
-            src={CTA}
-            alt=""
-            className="w-full h-full object-cover object-center"
-          />
         </section>
-        <section className="w-screen h-screen bg-secondary-200"></section>
       </main>
+      <Footer />
     </>
   );
 };
