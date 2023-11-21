@@ -9,7 +9,7 @@ const Navbar = () => {
           alt="Explore Nature Logo"
           className="w-14 h-14 invert"
         />
-        <ul className="hidden space-x-6 text-secondary-50 text-base font-source md:flex md:items-center">
+        <ul className="hidden space-x-6 text-secondary-50 text-base font-medium font-source md:flex md:items-center">
           <li>
             <a href="#">Gallery</a>
           </li>

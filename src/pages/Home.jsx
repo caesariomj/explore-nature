@@ -39,7 +39,8 @@ const Home = () => {
               Discover the Enchanting Wonders of Nature
             </h1>
             <p className="text-secondary-50/80 mt-4 mb-10 font-source">
-              Embark on a Journey to Explore and Preserve Our Earth's Treasures
+              Embark on a Journey to Explore and Preserve Our Earth&apos;s
+              Treasures
             </p>
             <a
               href="#"
@@ -52,11 +53,11 @@ const Home = () => {
         <section className="bg-secondary-200 px-8">
           <div className="w-full max-w-xl md:max-w-4xl flex flex-col text-center pt-16 mx-auto">
             <h2 className="text-5xl md:text-6xl text-primary-800 font-playfair">
-              Safeguarding Earth's Breathtaking Beauty: Our Shared Duty
+              Safeguarding Earth&apos;s Breathtaking Beauty: Our Shared Duty
             </h2>
             <p className="md:text-xl font-source font-medium text-primary-800/80 mt-8">
-              Cherishing and Preserving Nature's Gifts for the Well-being of Our
-              Planet and Future Generations
+              Cherishing and Preserving Nature&apos;s Gifts for the Well-being
+              of Our Planet and Future Generations
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 py-12 md:py-24">
@@ -284,12 +285,12 @@ const Home = () => {
               </h2>
               <p className="text-sm font-medium text-secondary-200/90 md:text-base mt-8">
                 Embark on a journey of discovery as we unravel the intricacies
-                of Earth's biodiversity, from the smallest organisms to the
+                of Earth&apos;s biodiversity, from the smallest organisms to the
                 grandest species. Delve into the harmonious interplay between
-                nature's components, understanding how ecosystems function as
-                unified entities. Stay informed about the latest environmental
-                challenges, and explore the ongoing efforts to preserve and
-                sustain our planet's invaluable resources.
+                nature&apos;s components, understanding how ecosystems function
+                as unified entities. Stay informed about the latest
+                environmental challenges, and explore the ongoing efforts to
+                preserve and sustain our planet&apos;s invaluable resources.
               </p>
             </div>
             <div className="flex flex-col flex-1 flex-nowrap py-12 gap-8 md:gap-0 md:p-0 md:ml-8 md:flex-row">
@@ -353,8 +354,8 @@ const Home = () => {
                   <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/60 transition-opacity ease-in-out duration-300 group-hover:opacity-100" />
                   <div className="sticky bottom-0 p-4 text-left">
                     <h3 className="text-2xl text-secondary-100 font-playfair">
-                      Embracing Nature's Beauty: A Journey into Environmental
-                      Conservation
+                      Embracing Nature&apos;s Beauty: A Journey into
+                      Environmental Conservation
                     </h3>
                     <p className="text-sm font-medium transition-colors ease-in-out duration-300 mt-3 text-secondary-100/90 md:text-secondary-100/0 md:group-hover:text-secondary-100/90">
                       Discover the Power of Preservation and Sustainability in
@@ -389,8 +390,8 @@ const Home = () => {
         </section>
         <section className="w-full h-full bg-secondary-200 relative">
           <div className="absolute flex justify-center items-center top-1/2 -translate-y-1/2 w-full text-center z-10 px-8">
-            <div className="w-1/3 py-2 px-2 md:py-6 md:px-12">
-              <h3 className="text-5xl md:text-8xl font-black tracking-tight text-primary-800 drop-shadow-xl">
+            <div className="w-1/3 py-2 px-4 md:py-6 md:px-12">
+              <h3 className="text-4xl md:text-5xl lg:text-6xl font-black tracking-tight text-primary-800 drop-shadow-xl">
                 <Counter endNumber={16300} duration={0.01} />+
               </h3>
               <p className="font-source text-base md:text-lg font-medium text-primary-800/90 drop-shadow-xl mt-4">
@@ -398,8 +399,8 @@ const Home = () => {
               </p>
             </div>
             <span className="w-[2px] h-32 bg-primary-800 md:h-64"></span>
-            <div className="w-1/3 py-2 px-2 md:py-6 md:px-12">
-              <h3 className="text-5xl md:text-8xl font-black tracking-tight text-primary-800 drop-shadow-xl">
+            <div className="w-1/3 py-2 px-4 md:py-6 md:px-12">
+              <h3 className="text-4xl md:text-5xl lg:text-6xl font-black tracking-tight text-primary-800 drop-shadow-xl">
                 <Counter endNumber={4.1} duration={300} /> M Hectares
               </h3>
               <p className="font-source text-base md:text-lg font-medium text-primary-800/90 drop-shadow-xl mt-4">
@@ -407,8 +408,8 @@ const Home = () => {
               </p>
             </div>
             <span className="w-[2px] h-32 bg-primary-800 md:h-64"></span>
-            <div className="w-1/3 py-2 px-2 md:py-6 md:px-12">
-              <h3 className="text-5xl md:text-8xl font-black tracking-tight text-primary-800 drop-shadow-xl">
+            <div className="w-1/3 py-2 px-4 md:py-6 md:px-12">
+              <h3 className="text-4xl md:text-5xl lg:text-6xl font-black tracking-tight text-primary-800 drop-shadow-xl">
                 <Counter endNumber={17} duration={50} />%
               </h3>
               <p className="font-source text-base md:text-lg font-medium text-primary-800/90 drop-shadow-xl mt-4">
@@ -433,13 +434,13 @@ const Home = () => {
             />
             <div className="mt-4 md:mt-0">
               <h2 className="text-6xl font-playfair text-secondary-200 mb-4">
-                Preserve Our Planet's Future
+                Preserve Our Planet&apos;s Future
               </h2>
               <p className="font-source text-secondary-200/70 mb-6 md:text-lg">
                 Join hands with us in the global effort to protect and nurture
                 our planet. Your actions today can secure a sustainable tomorrow
-                for generations to come. Let's take the first step towards a
-                greener, cleaner world. Together, we can make a difference.
+                for generations to come. Let&apos;s take the first step towards
+                a greener, cleaner world. Together, we can make a difference.
               </p>
               <a
                 href="#"
